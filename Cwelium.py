@@ -1,15 +1,3 @@
-# Copyright (c) 2024-2026 Cwelium Inc.
-# This project is licensed under the Cwelium License, which includes additional
-# terms under the GNU Affero General Public License (AGPL) v3.0.
-#
-# Author: Tips-Discord
-# Original Repository: https://github.com/Tips-Discord/Cwelium
-#
-# Additional Terms can be found at:
-# https://github.com/Tips-Discord/Cwelium/blob/main/LICENSE
-
-#from concurrent.futures import ThreadPoolExecutor
-import getpass
 import sys
 from colorama import Fore, init; init(autoreset=True)
 from colorist import ColorHex as h
@@ -222,13 +210,13 @@ class Render:
         
         edges = {"╗", "║", "╚", "╝", "═", "╔"}
         logo = [
-            " ██████╗██╗    ██╗███████╗██╗     ██╗██╗   ██╗███╗   ███╗",
-            "██╔════╝██║    ██║██╔════╝██║     ██║██║   ██║████╗ ████║",
-            "██║     ██║ █╗ ██║█████╗  ██║     ██║██║   ██║██╔████╔██║",
-            "██║     ██║███╗██║██╔══╝  ██║     ██║██║   ██║██║╚██╔╝██║",
-            "╚██████╗╚███╔███╔╝███████╗███████╗██║╚██████╔╝██║ ╚═╝ ██║",
-            " ╚═════╝ ╚══╝╚══╝ ╚══════╝╚══════╝╚═╝ ╚═════╝ ╚═╝     ╚═╝"
-        ]
+    "██████╗  █████╗      ██╗██╗  ██╗ █████╗ ██████╗ ",
+    "██╔══██╗██╔══██╗     ██║██║ ██╔╝██╔══██╗██╔══██╗",
+    "██████╔╝███████║     ██║█████╔╝ ███████║██████╔╝",
+    "██╔══██╗██╔══██║██   ██║██╔═██╗ ██╔══██║██╔══██╗",
+    "██║  ██║██║  ██║╚█████╔╝██║  ██╗██║  ██║██║  ██║",
+    "╚═╝  ╚═╝╚═╝  ╚═╝ ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝",
+]
         
         height = len(logo)
         width = max(len(line) for line in logo)
@@ -257,14 +245,14 @@ class Render:
         menu_edges = {"─", "╭", "│", "╰", "╯", "╮", "»", "«"}
         menu = [
             "╭─────────────────────────────────────────────────────────────────────────────────────────────╮",
-            "│ «01» Joiner            «07» Token Formatter    «13» Onliner           «19» Call Spammer     │",
-            "│ «02» Leaver            «08» Button Click       «14» Voice Raper       «20» Bio Change       │",
-            "│ «03» Spammer           «09» Accept Rules       «15» Change Nick       «21» Voice Joiner     │",
-            "│ «04» Token Checker     «10» Guild Check        «16» Thread Spammer    «22» Onboard Bypass   │",
-            "│ «05» Emoji Reaction    «11» Friend Spam        «17» Typer             «23» Dm Spammer       │",
-            "│ «06» ???               «12» ???                «18» ???               «24» Exit             │",
+            "│ ꒰ 1 ꒱ Joiner            ꒰ 7 ꒱ Token Formatter    ꒰ 13 ꒱ Onliner           ꒰ 19 ꒱ Call Spammer     │",
+            "│ ꒰ 2 ꒱ Leaver            ꒰ 8 ꒱ Button Click       ꒰ 14 ꒱ Voice Raper       ꒰ 20 ꒱ Bio Change       │",
+            "│ ꒰ 3 ꒱ Spammer           ꒰ 9 ꒱ Accept Rules       ꒰ 15 ꒱ Change Nick       ꒰ 21 ꒱ Voice Joiner     │",
+            "│ ꒰ 4 ꒱ Token Checker     ꒰ 10 ꒱ Guild Check       ꒰ 16 ꒱ Thread Spammer    ꒰ 22 ꒱ Onboard Bypass   │",
+            "│ ꒰ 5 ꒱ Emoji Reaction    ꒰ 11 ꒱ Friend Spam       ꒰ 17 ꒱ Typer             ꒰ 23 ꒱ Dm Spammer       │",
+            "│ ꒰ 6 ꒱ ???               ꒰ 12 ꒱ ???               ꒰ 18 ꒱ ???               ꒰ 24 ꒱ Exit             │",
             "╰─────────────────────────────────────────────────────────────────────────────────────────────╯",
-            "«~» Credits"
+            
         ]
 
         stats_text = f"Loaded ‹{len(tokens)}› tokens | Loaded ‹{len(proxies)}› proxies"
