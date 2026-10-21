@@ -1947,9 +1947,9 @@ class Menu:
     def credit(self):
         credits_lines = [
             "Special Thanks to",
-            "Coder: Tips",
-            "Scraper: Aniell4",
-            "Original Owner of Helium/Cwelium: Ekkore",
+            "Coder: Peter",
+            "Scraper: Zephyrus",
+            "Original Owner of Helium/Spidy: Eclipse",
             "And last but not least, you! Without you, this project wouldn't be possible.",
         ]
 
