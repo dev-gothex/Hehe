@@ -252,7 +252,7 @@ class Render:
             "│ ꒰ 5 ꒱ Emoji Reaction    ꒰ 11 ꒱ Friend Spam       ꒰ 17 ꒱ Typer             ꒰ 23 ꒱ Dm Spammer       │",
             "│ ꒰ 6 ꒱ ???               ꒰ 12 ꒱ ???               ꒰ 18 ꒱ ???               ꒰ 24 ꒱ Exit             │",
             "╰─────────────────────────────────────────────────────────────────────────────────────────────╯",
-              — By Peter
+              
         ]
 
         stats_text = f"Loaded ‹{len(tokens)}› tokens | Loaded ‹{len(proxies)}› proxies"
