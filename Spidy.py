@@ -1,3 +1,4 @@
+import getpass
 import sys
 from colorama import Fore, init; init(autoreset=True)
 from colorist import ColorHex as h
